@@ -1,0 +1,3 @@
+function readAndWrite(name){
+
+}
