@@ -1,20 +1,22 @@
 function arr(a){
     var array = [];
-    for(var i=0;i<a;i++) {
+    for(var i=0;i<parseInt(a);i++) {
         array.push(i);
     }
     return array;
 }
 console.log(arr(12));
 
-function divide(a,b,c){
-    if(Number.isInteger(a/b) && Number.isInteger(a/c)){
-       return true;
-    }else {
-        return false;
+function divide(number,firstDivide,secondDivide){
+    if(number && firstDivide &&  secondDivide) {
+        if(number % firstDivide === 0 && number % secondDivide === 0){
+            return true;
+        }
+        else return false;
     }
-    return null;
+    return false;
 }
+
 console.log(divide(1,2,3));
 
 
@@ -23,6 +25,6 @@ function capFirst(a){
         return a.charAt(0).toUpperCase() + a.slice(1)
     }
 }
-console.log(capFirst("roma nemnogo lox"))
+console.log(capFirst("dsdg"))
 
 
